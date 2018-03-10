@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <robotstxt j:dependencies="default"
+                   j:modulePriority="0"
+                   j:moduleType="module"
+                   j:title="Jahia robots.txt"
+                   jcr:primaryType="jnt:module">           
+            <portlets jcr:primaryType="jnt:portletFolder"/>
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                <files jcr:primaryType="jnt:folder">
+                    <robotstxt.png j:height="16"
+                                   j:width="16"
+                                   jcr:mixinTypes="jmix:image"
+                                   jcr:primaryType="jnt:file">
+                        <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                        <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                        <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                    </robotstxt.png>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <site-settings-base j:view="siteSettings"
+                                    jcr:mixinTypes="jmix:useUILocale"
+                                    jcr:primaryType="jnt:template">
+                    <robotsTxtManager j:applyOn="jnt:virtualsite"
+                                      j:defaultTemplate="false"
+                                      j:hiddenTemplate="true"
+                                      j:priority="100"
+                                      j:requiredPermissionNames="siteAdminRobotsTxt"
+                                      j:titleKey="siteSettings.label.robotsTxtManager"
+                                      jcr:mixinTypes="jmix:rbTitle"
+                                      jcr:primaryType="jnt:contentTemplate">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <robotstxt-manager jcr:primaryType="jnt:siteSettingsManageRobotsTxt">
+                                <j:translation_en jcr:language="en"
+                                                  jcr:mixinTypes="mix:title"
+                                                  jcr:primaryType="jnt:translation"
+                                                  jcr:title="Robots.txt manager"/>
+                            </robotstxt-manager>
+                        </pagecontent>
+                    </robotsTxtManager>
+                </site-settings-base>
+            </templates>
+        </robotstxt>
+    </modules>
+</content>

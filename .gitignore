@@ -1,0 +1,13 @@
+/.classpath
+/.project
+/.settings
+.idea
+*.iml
+*.ipr
+target
+/nbactions.xml
+
+/pom.xml.tag
+/release.properties
+/pom.xml.releaseBackup
+/pom.xml.next

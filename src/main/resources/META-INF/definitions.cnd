@@ -1,0 +1,10 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jnt:robotstxt] > jnt:content, jmix:autoPublish
+ - content (string)
+
+//---------------------------------------------------------
+// Robots.txt Administration
+//---------------------------------------------------------
+
+[jnt:siteSettingsManageRobotsTxt] > jnt:content, mix:title, jmix:studioOnly, jmix:siteComponent
